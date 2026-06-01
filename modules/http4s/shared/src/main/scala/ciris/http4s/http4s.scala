@@ -6,14 +6,19 @@
 
 package ciris
 
-import com.comcast.ip4s.Host
-import com.comcast.ip4s.Port
+import com.comcast.ip4s._
 import org.http4s.Uri
 import org.http4s.headers.Origin
 
 package object http4s {
   implicit final val hostConfigDecoder: ConfigDecoder[String, Host] =
     ConfigDecoder[String].mapOption("Host")(Host.fromString)
+
+  implicit final val hostnameConfigDecoder: ConfigDecoder[String, Hostname] =
+    ConfigDecoder[String].mapOption("Hostname")(Hostname.fromString)
+
+  implicit final val ipAddressConfigDecoder: ConfigDecoder[String, IpAddress] =
+    ConfigDecoder[String].mapOption("IpAddress")(IpAddress.fromString)
 
   implicit final val portConfigDecoder: ConfigDecoder[String, Port] =
     ConfigDecoder[String].mapOption("Port")(Port.fromString)
