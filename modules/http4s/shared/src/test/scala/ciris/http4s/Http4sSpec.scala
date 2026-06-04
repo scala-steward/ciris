@@ -34,6 +34,28 @@ final class Http4sSpec extends CatsEffectSuite {
     (first, second, third).tupled.void
   }
 
+  test("hostnameConfigDecoder.error") {
+    default("::1").as[Hostname].attempt[IO].map(_.isLeft).assert
+  }
+
+  test("hostnameConfigDecoder.success") {
+    default("localhost").as[Hostname].attempt[IO].assertEquals(Right(host"localhost"))
+  }
+
+  test("ipAddressConfigDecoder.error") {
+    default("localhost").as[IpAddress].attempt[IO].map(_.isLeft).assert
+  }
+
+  test("ipAddressConfigDecoder.success") {
+    val first =
+      default("0.0.0.0").as[IpAddress].attempt[IO].assertEquals(Right(ip"0.0.0.0"))
+
+    val second =
+      default("::1").as[IpAddress].attempt[IO].assertEquals(Right(ip"::1"))
+
+    (first, second).tupled.void
+  }
+
   test("portConfigDecoder.error") {
     default("").as[Port].attempt[IO].map(_.isLeft).assert
   }
