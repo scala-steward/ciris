@@ -8,7 +8,7 @@ val http4sAwsVersion = "6.5.0"
 val http4sVersion = "0.23.34"
 val kindProjectorVersion = "0.13.4"
 val munitCatsEffectVersion = "2.2.0"
-val refinedVersion = "0.11.3"
+val refinedVersion = "0.11.4"
 val scalaCheckEffectMunitVersion = "2.1.0"
 val squantsVersion = "1.8.3"
 
