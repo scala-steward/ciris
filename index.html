@@ -1,205 +1,103 @@
-<html><head><title>Ciris</title><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Viktor Lövgren" /><meta name="description" content="Lightweight, extensible, and validated configuration loading in Scala" /><meta name="og:image" content="/img/poster.png" /><meta name="og:title" content="Ciris" /><meta name="og:site_name" content="Ciris" /><meta name="og:url" content="" /><meta name="og:type" content="website" /><meta name="og:description" content="Lightweight, extensible, and validated configuration loading in Scala" /><link rel="icon" type="image/png" href="/img/favicon.png" /><meta name="twitter:title" content="Ciris" /><meta name="twitter:image" content="img/poster.png" /><meta name="twitter:description" content="Lightweight, extensible, and validated configuration loading in Scala" /><meta name="twitter:card" content="summary_large_image" /><meta name="twitter:creator" content="@vlovgr" /><link rel="icon" type="image/png" sizes="16x16" href="/img/favicon16x16.png" /><link rel="icon" type="image/png" sizes="24x24" href="/img/favicon24x24.png" /><link rel="icon" type="image/png" sizes="32x32" href="/img/favicon32x32.png" /><link rel="icon" type="image/png" sizes="48x48" href="/img/favicon48x48.png" /><link rel="icon" type="image/png" sizes="57x57" href="/img/favicon57x57.png" /><link rel="icon" type="image/png" sizes="60x60" href="/img/favicon60x60.png" /><link rel="icon" type="image/png" sizes="64x64" href="/img/favicon64x64.png" /><link rel="icon" type="image/png" sizes="70x70" href="/img/favicon70x70.png" /><link rel="icon" type="image/png" sizes="72x72" href="/img/favicon72x72.png" /><link rel="icon" type="image/png" sizes="76x76" href="/img/favicon76x76.png" /><link rel="icon" type="image/png" sizes="96x96" href="/img/favicon96x96.png" /><link rel="icon" type="image/png" sizes="114x114" href="/img/favicon114x114.png" /><link rel="icon" type="image/png" sizes="120x120" href="/img/favicon120x120.png" /><link rel="icon" type="image/png" sizes="128x128" href="/img/favicon128x128.png" /><link rel="icon" type="image/png" sizes="144x144" href="/img/favicon144x144.png" /><link rel="icon" type="image/png" sizes="150x150" href="/img/favicon150x150.png" /><link rel="icon" type="image/png" sizes="152x152" href="/img/favicon152x152.png" /><link rel="icon" type="image/png" sizes="196x196" href="/img/favicon196x196.png" /><link rel="icon" type="image/png" sizes="310x310" href="/img/favicon310x310.png" /><link rel="icon" type="image/png" sizes="310x150" href="/img/favicon310x150.png" /><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" /><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" /><link rel="stylesheet" href="/highlight/styles/atom-one-light.css" /><link rel="stylesheet" href="/css/style.css" /><link rel="stylesheet" href="/css/palette.css" /><link rel="stylesheet" href="/css/codemirror.css" /><link rel="stylesheet" href="/css/custom.css" /></head><body><header id="site-header"><div class="navbar-wrapper"><div class="container"><div class="row"><div class="col-xs-6"><a href="/" class="brand"><div class="icon-wrapper"><span>Ciris</span></div></a></div><div class="col-xs-6"><nav class="text-right"><ul class=""><li><a href="https://github.com/vlovgr/ciris"><i class="fa fa-github"></i><span class="hidden-xs">GitHub</span></a></li><li><a href="api"><i class="fa fa-file-text"></i><span class="hidden-xs">API Documentation</span></a></li></ul></nav></div></div></div></div><div class="jumbotron"><div class="container"><h1 class="text-center">Lightweight, extensible, and validated configuration loading in Scala</h1><h2></h2><p class="text-center"><a href="https://github.com/vlovgr/ciris" class="btn btn-outline-inverse">View on GitHub</a></p></div></div><div><ul class="horizontalNav">                                   <li><a class="" href="/docs/basics">Usage Basics</a></li>  <li><a class="" href="/docs/topics">Configuration Topics</a></li>  <li><a class="" href="/docs/sources">Configuration Sources</a></li>  <li><a class="" href="/docs/decoders">Configuration Decoders</a></li>  <li><a class="" href="/docs/modules">Modules Overview</a></li>  <li><a class="" href="/docs/contributing">Contributing Guide</a></li> </ul></div></header><main id="site-main"><section class="use"><div class="container"><div id="content"><p><a href="https://typelevel.org/projects/#ciris"><img src="https://img.shields.io/badge/typelevel-library-fd3d50.svg" alt="Typelevel" /></a> <a href="https://travis-ci.org/vlovgr/ciris"><img src="https://img.shields.io/travis/vlovgr/ciris/master.svg" alt="Travis" /></a> <a href="https://codecov.io/gh/vlovgr/ciris"><img src="https://img.shields.io/codecov/c/github/vlovgr/ciris.svg" alt="Codecov" /></a> <a href="https://gitter.im/vlovgr/ciris"><img src="https://img.shields.io/gitter/room/vlovgr/ciris.svg?colorB=36bc97" alt="Gitter" /></a> <a href="https://index.scala-lang.org/vlovgr/ciris"><img src="https://img.shields.io/badge/version-v0.11.0-orange.svg" alt="Version" /></a></p>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Typelevel Laika + Helium Theme" />
+    <title>Ciris · Functional Configurations for Scala</title>
+    
+      <meta name="author" content="Viktor Rudebeck"/>
+    
+    
+      <meta name="description" content="Functional Configurations for Scala"/>
+    
+    
+      <link rel="icon"  type="image/svg+xml" href="img/favicon.svg"/>
+    
+    
+    <link rel="stylesheet" type="text/css" href="helium/site/icofont.min.css" />
+    <link rel="stylesheet" type="text/css" href="helium/site/laika-helium.css" />
+    <link rel="stylesheet" type="text/css" href="helium/site/landing-page.css" />
+    <link rel="stylesheet" type="text/css" href="css/site.css" />
+    <script src="helium/site/laika-helium.js"></script>
+    
+    <script> /* for avoiding page load transitions */ </script>
+  </head>
 
-<h2 id="ciris">Ciris</h2>
-<p>Lightweight, extensible, and validated configuration loading in <a href="https://www.scala-lang.org">Scala</a>, <a href="https://www.scala-js.org">Scala.js</a>, and <a href="http://scala-native.org">Scala Native</a>.<br />
-The core library is dependency-free, while modules provide integrations with external libraries.</p>
+  <body>
 
-<p>The name comes from being an abbreviation of the word <em>configurations</em>.<br />
-Ciris’ logo was inspired by the epyllion Ciris from <a href="https://en.wikipedia.org/wiki/Appendix_Vergiliana#Ciris_.28.22The_Sea-Bird.22.29">Appendix Vergiliana</a>.</p>
+    <div id="header" class="light-inverted dark-inverted">
+      <div id="header-left">
+         <img src="img/logo.svg" alt="" height="150"> 
+         <h1>Ciris</h1> 
+         <h2>Functional Configurations for Scala</h2> 
+        <div class="row links">
+          <a class="button-link" href="overview.html">Documentation</a>
+          <span class="row links"><a class="icon-link svg-link" href="api/ciris/"><span class="api" title="API"><svg class="svg-icon" width="100%" height="100%" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+  <g class="svg-shape">
+    <path d="M75,47.5c13.246,0 24,10.754 24,24c0,13.246 -10.754,24 -24,24c-13.246,0 -24,-10.754 -24,-24c0,-13.246 10.754,-24 24,-24Zm-50,-0c13.246,-0 24,10.754 24,24c0,13.246 -10.754,24 -24,24c-13.246,-0 -24,-10.754 -24,-24c0,-13.246 10.754,-24 24,-24Zm2.705,16.735l7.239,0l0.622,-4.904l-21.833,0l-0,4.904l7.589,0l0,22.067l6.383,0l-0,-22.067Zm58.076,7.265c-0,-8.757 -3.698,-14.166 -10.781,-14.166c-7.083,-0 -10.781,5.604 -10.781,14.166c0,8.757 3.698,14.166 10.781,14.166c7.083,0 10.781,-5.604 10.781,-14.166Zm-6.539,0c0,6.538 -1.128,9.496 -4.242,9.496c-2.997,0 -4.242,-2.88 -4.242,-9.496c-0,-6.616 1.206,-9.496 4.242,-9.496c3.036,-0 4.242,2.88 4.242,9.496Zm-29.242,-67c13.246,0 24,10.754 24,24c0,13.246 -10.754,24 -24,24c-13.246,0 -24,-10.754 -24,-24c0,-13.246 10.754,-24 24,-24Zm0.512,9.834c-7.122,-0 -12.609,5.098 -12.609,14.127c-0,9.263 5.215,14.205 12.532,14.205c4.164,0 7.083,-1.634 9.068,-3.658l-2.88,-3.697c-1.518,1.206 -3.153,2.413 -5.838,2.413c-3.697,-0 -6.266,-2.763 -6.266,-9.263c-0,-6.616 2.724,-9.379 6.149,-9.379c2.102,-0 3.892,0.778 5.371,1.984l3.113,-3.775c-2.257,-1.868 -4.748,-2.957 -8.64,-2.957Z"/>
+  </g>
+</svg></span></a><a class="icon-link svg-link" href="https://github.com/vlovgr/ciris"><span class="github" title="Source Code"><svg class="svg-icon" width="100%" height="100%" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+  <g class="svg-shape">
+    <path d="M49.995,1c-27.609,-0 -49.995,22.386 -49.995,50.002c-0,22.09 14.325,40.83 34.194,47.444c2.501,0.458 3.413,-1.086 3.413,-2.412c0,-1.185 -0.043,-4.331 -0.067,-8.503c-13.908,3.021 -16.843,-6.704 -16.843,-6.704c-2.274,-5.773 -5.552,-7.311 -5.552,-7.311c-4.54,-3.103 0.344,-3.042 0.344,-3.042c5.018,0.356 7.658,5.154 7.658,5.154c4.46,7.64 11.704,5.433 14.552,4.156c0.454,-3.232 1.744,-5.436 3.174,-6.685c-11.102,-1.262 -22.775,-5.553 -22.775,-24.713c-0,-5.457 1.949,-9.92 5.147,-13.416c-0.516,-1.265 -2.231,-6.348 0.488,-13.233c0,0 4.199,-1.344 13.751,5.126c3.988,-1.108 8.266,-1.663 12.518,-1.682c4.245,0.019 8.523,0.574 12.517,1.682c9.546,-6.47 13.736,-5.126 13.736,-5.126c2.728,6.885 1.013,11.968 0.497,13.233c3.204,3.496 5.141,7.959 5.141,13.416c0,19.209 -11.691,23.436 -22.83,24.673c1.795,1.544 3.394,4.595 3.394,9.26c0,6.682 -0.061,12.076 -0.061,13.715c0,1.338 0.899,2.894 3.438,2.406c19.853,-6.627 34.166,-25.354 34.166,-47.438c-0,-27.616 -22.389,-50.002 -50.005,-50.002"/>
+  </g>
+</svg></span></a><a class="icon-link glyph-link" href="https://discord.gg/XF3CXcMzqD"><i class="icofont-laika chat" title="Chat">&#xeed5;</i></a></span>
+        </div>
+      </div>
+      <div id="header-right">
+        
+          <p>Latest Release</p>
+          <p class="large">0.11.0</p>
+        
+        
+          <p>License</p>
+          <p class="large">MIT</p>
+        
+        
+          <div id="docs">
+            <p>Documentation</p>
+            <ul>
+              
+                <li><a class="text-link" href="overview.html">Overview</a></li>
+              
+                <li><a class="text-link" href="quick-example.html">Quick Example</a></li>
+              
+                <li><a class="text-link" href="configurations.html">Configurations</a></li>
+              
+                <li><a class="text-link" href="integrations/circe.html">Integrations</a></li>
+              
+            </ul>
+          </div>
+        
+        
+      </div>
+    </div>
+    
+    
+    
+    <main>
+      <p><a href="https://typelevel.org/projects/#ciris"><img src="https://img.shields.io/badge/typelevel-library-fd3d50.svg" alt="Typelevel"></a>
+      <a href="https://github.com/vlovgr/ciris/actions"><img src="https://img.shields.io/github/actions/workflow/status/vlovgr/ciris/ci.yml?branch=main" alt="GitHub Actions"></a>
+      <a href="https://discord.gg/XF3CXcMzqD"><img src="https://img.shields.io/discord/632277896739946517?color=5865f2" alt="Discord"></a>
+      <a href="https://index.scala-lang.org/vlovgr/ciris"><img src="https://img.shields.io/maven-central/v/is.cir/ciris_3?label=version&color=orange" alt="Version"></a></p>
+      <p>Functional, lightweight, and composable configuration loading for Scala.</p>
+      <p>Project is under active development. Feedback and contributions welcome.</p>
+      
+      <h3 id="getting-started" class="section"><a class="anchor-link left" href="#getting-started"><i class="icofont-laika link">&#xef71;</i></a>Getting Started</h3>
+      <p>To get started with <a href="https://scala-sbt.org">sbt</a>, add the following line to your <code>build.sbt</code> file.</p>
+      <pre class="keep-together pdf epub"><code class="nohighlight"><span class="identifier">libraryDependencies</span><span> += </span><span class="string-literal">&quot;is.cir&quot;</span><span> %% </span><span class="string-literal">&quot;ciris&quot;</span><span> % </span><span class="string-literal">&quot;0.11.0&quot;</span></code></pre>
+      <p>Published for Scala 2.12, 2.13 and 3.3, <a href="https://www.scala-js.org">Scala.js</a> 1.22 and <a href="https://scala-native.org">Scala Native</a> 0.5.</p>
+      <p>For changes between versions, please refer to the <a href="https://github.com/vlovgr/ciris/releases">release notes</a>.</p>
+    </main>
+    
 
-<blockquote>
-  <p>The Ciris is an epyllion in 541 hexameters describing the myth of Nisus, the king of Megara and his daughter Scylla.<br />
-After the city falls and Scylla is taken prisoner on the Cretan ships, Amphitrite transforms her into the <em>ciris</em> seabird.</p>
-</blockquote>
+    
+<hr class="footer-rule"/>
+<footer>
+  Licensed under the <a href="https://github.com/vlovgr/ciris/blob/main/license.txt">MIT License</a>.<br>Copyright © 2017 Viktor Rudebeck.
+</footer>
 
-<p>Ciris is a new project under active development. Feedback and contributions are welcome.</p>
 
-<h3 id="introduction">Introduction</h3>
-<p>Ciris is a <em>configuration as code</em> library for compile-time safe configurations. For the configuration values which cannot reside in code, Ciris helps you to load and decode values from various sources, while dealing with effects and errors. Validation is encoded by using appropriate data types, with integrations to libraries such as <a href="https://github.com/lloydmeta/enumeratum">enumeratum</a>, <a href="https://github.com/fthomas/refined">refined</a>, <a href="https://github.com/non/spire">spire</a>, and <a href="https://github.com/typelevel/squants">squants</a>.</p>
-
-<p>Ciris is an alternative to configuration files in situations where it’s easy to change and deploy software. Ciris aims to make it easy, safe, and secure to work with configurations, by eliminating many common configuration errors, by preventing errors from occurring as early as possible, and by loading secret configuration values directly from vault services.</p>
-
-<p>For a more detailed introduction, please refer to the <a href="https://cir.is/docs">usage guide</a>.</p>
-
-<p align="center">
-  <a href="https://asciinema.org/a/170215">
-    <img src="https://asciinema.org/a/170215.png" width="65%" />
-  </a>
-</p>
-
-<h3 id="getting-started">Getting Started</h3>
-<p>To get started with <a href="https://www.scala-sbt.org">sbt</a>, simply add the following lines to your <code class="highlighter-rouge">build.sbt</code> file.<br />
-For an overview, usage instructions, and examples, please see the <a href="https://cir.is/docs">usage guide</a>.</p>
-
-<div class="language-scala highlighter-rouge"><pre class="highlight"><code><span class="k">val</span> <span class="n">cirisVersion</span> <span class="k">=</span> <span class="s">"0.11.0"</span>
-
-<span class="n">libraryDependencies</span> <span class="o">++=</span> <span class="nc">Seq</span><span class="o">(</span>
-  <span class="s">"is.cir"</span> <span class="o">%%</span> <span class="s">"ciris-cats"</span><span class="o">,</span>
-  <span class="s">"is.cir"</span> <span class="o">%%</span> <span class="s">"ciris-cats-effect"</span><span class="o">,</span>
-  <span class="s">"is.cir"</span> <span class="o">%%</span> <span class="s">"ciris-core"</span><span class="o">,</span>
-  <span class="s">"is.cir"</span> <span class="o">%%</span> <span class="s">"ciris-enumeratum"</span><span class="o">,</span>
-  <span class="s">"is.cir"</span> <span class="o">%%</span> <span class="s">"ciris-generic"</span><span class="o">,</span>
-  <span class="s">"is.cir"</span> <span class="o">%%</span> <span class="s">"ciris-refined"</span><span class="o">,</span>
-  <span class="s">"is.cir"</span> <span class="o">%%</span> <span class="s">"ciris-spire"</span><span class="o">,</span>
-  <span class="s">"is.cir"</span> <span class="o">%%</span> <span class="s">"ciris-squants"</span>
-<span class="o">).</span><span class="n">map</span><span class="o">(</span><span class="k">_</span> <span class="o">%</span> <span class="n">cirisVersion</span><span class="o">)</span>
-</code></pre>
-</div>
-
-<p>Make sure to replace <code class="highlighter-rouge">%%</code> with <code class="highlighter-rouge">%%%</code> above if you are using Scala.js or Scala Native.<br />
-Libraries are published for Scala 2.11 and 2.12, and Java 8 where possible.<br />
-For changes between versions, please see the <a href="https://github.com/vlovgr/ciris/releases">release notes</a>.</p>
-
-<p>Refer to the table below for platform and version support across modules.</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>Module</th>
-      <th>Dependency</th>
-      <th>Scala</th>
-      <th>Scala.js</th>
-      <th>Scala Native</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="https://cir.is/docs/cats-module"><code class="highlighter-rouge">ciris-cats</code></a></td>
-      <td>cats 1.3.1</td>
-      <td>✓ 2.11, 2.12</td>
-      <td>✓ 0.6 (2.11, 2.12)</td>
-      <td>𐄂</td>
-    </tr>
-    <tr>
-      <td><a href="https://cir.is/docs/cats-effect-module"><code class="highlighter-rouge">ciris-cats-effect</code></a></td>
-      <td>cats-effect 1.0.0</td>
-      <td>✓ 2.11, 2.12</td>
-      <td>✓ 0.6 (2.11, 2.12)</td>
-      <td>𐄂</td>
-    </tr>
-    <tr>
-      <td><a href="https://cir.is/docs"><code class="highlighter-rouge">ciris-core</code></a></td>
-      <td>𐄂</td>
-      <td>✓ 2.11, 2.12</td>
-      <td>✓ 0.6 (2.11, 2.12)</td>
-      <td>✓ 0.3 (2.11)</td>
-    </tr>
-    <tr>
-      <td><a href="https://cir.is/docs/enumeratum-module"><code class="highlighter-rouge">ciris-enumeratum</code></a></td>
-      <td>enumeratum 1.5.13</td>
-      <td>✓ 2.11, 2.12</td>
-      <td>✓ 0.6 (2.11, 2.12)</td>
-      <td>𐄂</td>
-    </tr>
-    <tr>
-      <td><a href="https://cir.is/docs/generic-module"><code class="highlighter-rouge">ciris-generic</code></a></td>
-      <td>shapeless 2.3.3</td>
-      <td>✓ 2.11, 2.12</td>
-      <td>✓ 0.6 (2.11, 2.12)</td>
-      <td>✓ 0.3 (2.11)</td>
-    </tr>
-    <tr>
-      <td><a href="https://cir.is/docs/refined-module"><code class="highlighter-rouge">ciris-refined</code></a></td>
-      <td>refined 0.9.2</td>
-      <td>✓ 2.11, 2.12</td>
-      <td>✓ 0.6 (2.11, 2.12)</td>
-      <td>✓ 0.3 (2.11)</td>
-    </tr>
-    <tr>
-      <td><a href="https://cir.is/docs/spire-module"><code class="highlighter-rouge">ciris-spire</code></a></td>
-      <td>spire 0.16.0</td>
-      <td>✓ 2.11, 2.12</td>
-      <td>✓ 0.6 (2.11, 2.12)</td>
-      <td>𐄂</td>
-    </tr>
-    <tr>
-      <td><a href="https://cir.is/docs/squants-module"><code class="highlighter-rouge">ciris-squants</code></a></td>
-      <td>squants 1.3.0</td>
-      <td>✓ 2.11, 2.12</td>
-      <td>✓ 0.6 (2.11, 2.12)</td>
-      <td>𐄂</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>Backwards binary compatibility for the library is guaranteed between patch versions.<br />
-For example, <code class="highlighter-rouge">0.11.x</code> is backwards binary compatible with <code class="highlighter-rouge">0.11.y</code> for any <code class="highlighter-rouge">x &gt; y</code>.<br />
-More recent patch versions are drop-in replacements for earlier patch versions.</p>
-
-<p>The only required module is <a href="https://cir.is/docs"><code class="highlighter-rouge">ciris-core</code></a>, the rest are optional library integrations.<br />
-For an explanation of how to use the modules, refer to the <a href="https://cir.is/docs/modules">modules overview</a> section.</p>
-
-<ul>
-  <li>The <a href="https://cir.is/docs/cats-module"><code class="highlighter-rouge">ciris-cats</code></a> module provides type classes and type class instances from <a href="https://github.com/typelevel/cats">cats</a>.</li>
-  <li>The <a href="https://cir.is/docs/cats-effect-module"><code class="highlighter-rouge">ciris-cats-effect</code></a> module provides effect type classes from <a href="https://github.com/typelevel/cats-effect">cats-effect</a>.</li>
-  <li>The <a href="https://cir.is/docs/enumeratum-module"><code class="highlighter-rouge">ciris-enumeratum</code></a> module allows loading <a href="https://github.com/lloydmeta/enumeratum">enumeratum</a> enumerations.</li>
-  <li>The <a href="https://cir.is/docs/generic-module"><code class="highlighter-rouge">ciris-generic</code></a> module allows loading more types with <a href="https://github.com/milessabin/shapeless">shapeless</a>.</li>
-  <li>The <a href="https://cir.is/docs/refined-module"><code class="highlighter-rouge">ciris-refined</code></a> module allows loading <a href="https://github.com/fthomas/refined">refined</a> refinement types.</li>
-  <li>The <a href="https://cir.is/docs/spire-module"><code class="highlighter-rouge">ciris-spire</code></a> module allows loading <a href="https://github.com/non/spire">spire</a> number types.</li>
-  <li>The <a href="https://cir.is/docs/squants-module"><code class="highlighter-rouge">ciris-squants</code></a> module allows loading <a href="https://github.com/typelevel/squants">squants</a> data types.</li>
-</ul>
-
-<p>If you’re using <a href="https://cir.is/docs/cats-module"><code class="highlighter-rouge">ciris-cats</code></a> or <a href="https://cir.is/docs/cats-effect-module"><code class="highlighter-rouge">ciris-cats-effect</code></a>, you should enable <a href="https://github.com/scala/bug/issues/2712">partial unification</a>.</p>
-
-<div class="language-scala highlighter-rouge"><pre class="highlight"><code><span class="n">scalacOptions</span> <span class="o">+=</span> <span class="s">"-Ypartial-unification"</span>
-</code></pre>
-</div>
-
-<h4 id="ammonite">Ammonite</h4>
-<p>To start an <a href="http://www.lihaoyi.com/Ammonite/#Ammonite-REPL">Ammonite REPL</a> with Ciris loaded and imported, simply run the following.</p>
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>curl -Ls try.cir.is | sh
-</code></pre>
-</div>
-<p>You will need to have a JDK installed. The <a href="https://try.cir.is">script</a> will then:</p>
-<ul>
-  <li>download and install the latest available version of <a href="https://github.com/coursier/coursier">coursier</a>,</li>
-  <li>use coursier to fetch Ammonite and the latest Ciris version,</li>
-  <li>start an Ammonite REPL with Ciris already imported.</li>
-</ul>
-
-<p>To use <a href="https://typelevel.org/scala/">Typelevel Scala</a> with literal types enabled, instead use the following.</p>
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>curl -Ls try.cir.is/typelevel | sh
-</code></pre>
-</div>
-
-<p>If you already have the Ammonite REPL installed, you can load Ciris using the following commands.</p>
-
-<div class="language-scala highlighter-rouge"><pre class="highlight"><code><span class="k">import</span> <span class="nn">$ivy.</span><span class="n">`is.cir::ciris-cats:0.11.0`</span><span class="o">,</span> <span class="n">ciris</span><span class="o">.</span><span class="n">cats</span><span class="o">.</span><span class="k">_</span>
-<span class="k">import</span> <span class="nn">$ivy.</span><span class="n">`is.cir::ciris-cats-effect:0.11.0`</span><span class="o">,</span> <span class="n">ciris</span><span class="o">.</span><span class="n">cats</span><span class="o">.</span><span class="n">effect</span><span class="o">.</span><span class="k">_</span><span class="o">,</span> <span class="n">ciris</span><span class="o">.</span><span class="n">cats</span><span class="o">.</span><span class="n">effect</span><span class="o">.</span><span class="n">syntax</span><span class="o">.</span><span class="k">_</span>
-<span class="k">import</span> <span class="nn">$ivy.</span><span class="n">`is.cir::ciris-core:0.11.0`</span><span class="o">,</span> <span class="n">ciris</span><span class="o">.</span><span class="k">_</span><span class="o">,</span> <span class="n">ciris</span><span class="o">.</span><span class="n">syntax</span><span class="o">.</span><span class="k">_</span>
-<span class="k">import</span> <span class="nn">$ivy.</span><span class="n">`is.cir::ciris-enumeratum:0.11.0`</span><span class="o">,</span> <span class="n">ciris</span><span class="o">.</span><span class="n">enumeratum</span><span class="o">.</span><span class="k">_</span>
-<span class="k">import</span> <span class="nn">$ivy.</span><span class="n">`is.cir::ciris-generic:0.11.0`</span><span class="o">,</span> <span class="n">ciris</span><span class="o">.</span><span class="n">generic</span><span class="o">.</span><span class="k">_</span>
-<span class="k">import</span> <span class="nn">$ivy.</span><span class="n">`is.cir::ciris-refined:0.11.0`</span><span class="o">,</span> <span class="n">ciris</span><span class="o">.</span><span class="n">refined</span><span class="o">.</span><span class="k">_</span><span class="o">,</span> <span class="n">ciris</span><span class="o">.</span><span class="n">refined</span><span class="o">.</span><span class="n">syntax</span><span class="o">.</span><span class="k">_</span>
-<span class="k">import</span> <span class="nn">$ivy.</span><span class="n">`is.cir::ciris-spire:0.11.0`</span><span class="o">,</span> <span class="n">ciris</span><span class="o">.</span><span class="n">spire</span><span class="o">.</span><span class="k">_</span>
-<span class="k">import</span> <span class="nn">$ivy.</span><span class="n">`is.cir::ciris-squants:0.11.0`</span><span class="o">,</span> <span class="n">ciris</span><span class="o">.</span><span class="n">squants</span><span class="o">.</span><span class="k">_</span>
-</code></pre>
-</div>
-
-<h4 id="external-libraries">External Libraries</h4>
-<p>Below is an incomplete list of third-party libraries that integrate with Ciris.<br />
-If your library is not included in the list, then please open a pull request.</p>
-
-<ul>
-  <li><a href="https://github.com/ovotech/ciris-aiven-kafka"><code class="highlighter-rouge">ciris-aiven-kafka</code></a></li>
-  <li><a href="https://github.com/ovotech/ciris-aws-ssm"><code class="highlighter-rouge">ciris-aws-ssm</code></a></li>
-  <li><a href="https://github.com/ovotech/ciris-credstash"><code class="highlighter-rouge">ciris-credstash</code></a></li>
-  <li><a href="https://github.com/ovotech/ciris-kubernetes"><code class="highlighter-rouge">ciris-kubernetes</code></a></li>
-</ul>
-
-<h3 id="documentation">Documentation</h3>
-<p>For an overview, with examples and explanations of the most common use cases, please refer to the <a href="https://cir.is/docs">usage guide</a>.<br />
-If you’re looking for a more detailed code-centric overview, you can instead take a look at the <a href="https://cir.is/api">API documentation</a>.<br />
-There is also a small <a href="https://github.com/vlovgr/ciris-example">example application</a> available to exemplify how to use the library in an application context.</p>
-
-<h3 id="participation">Participation</h3>
-<p>Ciris embraces pure, typeful, idiomatic functional programming in Scala, and wants to provide a safe and friendly environment for teaching, learning, and contributing as described in the <a href="https://typelevel.org/conduct.html">Typelevel Code of Conduct</a>. It is expected that participants follow the code of conduct in all official channels, including on GitHub and in the Gitter chat room.</p>
-
-<p>If you would like to be involved in building Ciris, check out the <a href="https://cir.is/docs/contributing">contributing guide</a>.</p>
-
-<h3 id="license">License</h3>
-<p>Ciris is available under the MIT license, available at <a href="https://opensource.org/licenses/MIT">https://opensource.org/licenses/MIT</a> and in the <a href="https://github.com/vlovgr/ciris/blob/master/license.txt">license file</a>.</p>
-
-</div></div></section><section class="technologies"><div class="container"><div class="row"></div></div></section></main><footer id="site-footer"><div class="container"><div class="row"><div class="col-xs-6"><p>Ciris is designed and developed by <a href="https://vlovgr.se" target="_blank">Viktor Lövgren</a></p></div><div class="col-xs-6"><p class="text-right"><a href="https://github.com/vlovgr/ciris"><span class="fa fa-github"></span>View on GitHub</a></p></div></div><div class="row"><div class="col-xs-6"><p>Website built with <a href="https://47deg.github.io/sbt-microsites/" target="_blank">Sbt-microsites</a> - © 2016 <a href="https://www.47deg.com/" target="_blank">47 Degrees</a></p></div></div></div></footer><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script><script src="/highlight/highlight.pack.js"></script><script>hljs.configure({languages:['scala','java','bash']});
-hljs.initHighlighting();
-              </script><script src="/js/custom.js"></script><script>((window.gitter = {}).chat = {}).options = {
-room: 'vlovgr/ciris'};</script><script src="https://sidecar.gitter.im/dist/sidecar.v1.js"></script></body></html>
+  </body>
+</html>
