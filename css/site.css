@@ -146,6 +146,15 @@ code {
   padding: 0.2em 0.4em;
 }
 
+a.api {
+  font-family: var(--code-font);
+  font-size: var(--code-font-size);
+  white-space: nowrap;
+  background-color: rgba(27, 31, 35, 0.05);
+  border-radius: 3px;
+  padding: 0.2em 0.4em;
+}
+
 pre code .comment {
   font-style: italic;
 }
@@ -210,4 +219,24 @@ main:not(.content) {
 #header #header-left .row.links a.icon-link:hover {
   color: var(--component-hover);
   text-decoration: none;
+}
+
+@supports (animation-timeline: scroll()) {
+  #header-tint {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 20px;
+    background-color: var(--gradient-top);
+    animation: header-tint-scroll linear both;
+    animation-timeline: scroll(root);
+    animation-range: 0 20px;
+  }
+
+  @keyframes header-tint-scroll {
+    to {
+      transform: translateY(-100%);
+    }
+  }
 }
